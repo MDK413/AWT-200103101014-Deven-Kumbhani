@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Menu 200103101014</title>
+    <style type="text/css">
+        #mainUL li ul li{display: none;}
+        #mainUL li:hover ul li {display: block;}
+        #mainUL li:hover ul li ul li{display: none;}
+        #mainUL li ul li:hover ul li{display: block;}
+        #mainUL li ul li:hover ul li ul li{display: none;}
+        #mainUL li ul li ul li:hover ul li{display: block;}
+    </style>
+</head>
+<body>
+    <ul id="mainUL">
+        <li>Google
+            <ul>
+                <li>Gmail
+                    <ul>
+                        <li>SignIn
+                            <ul>
+                                <li>SignIn as Admin</li>
+                                <li>SignIn as Guest</li>
+                            </ul>
+                        </li>
+                        <li>SignUp</li>
+                    </ul>
+                </li>
+                <li>Gmap</li>
+                <li>Gdrive</li>
+            </ul>
+        </li>
+        <li>Facebook</li>
+        <li>MSN</li>
+        <li>GameHub
+            <ul>
+                <li>Online
+                    <ul>
+                        <li>SignIn</li>
+                        <li>SignUp</li>
+                    </ul>
+                </li>
+                <li>Offline
+                    <ul>
+                        <li>SignIn</li>
+                        <li>SignUp</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Amazon
+            <ul>
+                <li>AWS</li>
+                <li>Shopping</li>
+                
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
