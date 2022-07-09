@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vanila JS Demo</title>
+        <link rel="stylesheet" href="css/msg.css">
+        <script src="scripts/msg.js" type="text/javascript"></script>
+
+        <!-- code below is for internal javascript. -->
+        <script type="text/javascript">
+            function demoInternalAlert(){
+                alert("Hello there!")
+            }
+            function demoInternalConfirm(){
+                if (confirm("Are you sure?")){
+                    alert("Yes")
+                }
+                else{
+                    alert("Disagree")
+                }
+            }
+            function demoInternalPrompt(){
+                var m=prompt("Enter your message:")
+                alert("Okay! we got your message:\n"+m)
+
+            }
+            
+        </script>
+
+    </head>
+    <body>
+        <div class="maindiv" id="mdiv"></div><hr/>
+
+        <div class="inline">
+            <input type="button" value="alert inline" onclick="alert('Hello Guys')"></input>&nbsp;&nbsp;
+            <input type="button" value="confirm inline" onclick="confirm('Are you sure..')"></input>&nbsp;&nbsp;
+            <input type="button" value="prompt inline" onclick="prompt('Enter your firstname:')"></input>&nbsp;&nbsp;
+        </div><hr/>
+
+        <div class="internal">
+            <input type="button" value="alert internal"   onclick='demoInternalAlert()'></input>&nbsp;&nbsp;
+            <input type="button" value="confirm internal" onclick='demoInternalConfirm()'></input>&nbsp;&nbsp;
+            <input type="button" value="prompt internal"  onclick='demoInternalPrompt()'></input>&nbsp;&nbsp;
+        </div><hr/>
+
+        <div class="external">
+            <input type="button" value="alert external"  onclick='demoExternalAlert()'></input>&nbsp;&nbsp;
+            <input type="button" value="confirm external"onclick='demoExternalConfirm()'></input>&nbsp;&nbsp;
+            <input type="button" value="prompt external" onclick='demoExternalPrompt()'></input>&nbsp;&nbsp;
+        </div><hr/>
+
+        <div>
+        <input type="button" value="Body Bg Green" onclick="bodyBGGreen()" />&nbsp;&nbsp;
+		<input type="button" value="Div Bg Gray" onclick="divBGGray()" />&nbsp;&nbsp;
+        </div><hr/>
+        
+        <div>
+        <input type="button" value="Body Bg Prompt" onclick="bodyBGDynamic()" />&nbsp;&nbsp;
+		<input type="button" value="Div Bg Prompt" onclick="divBGDynamic()" />&nbsp;&nbsp;
+        </div><hr/>
+
+        Body Background Color:
+        <input type="color" id="CP1" onchange="bodyBGCP1()" />&nbsp;&nbsp;
+        Div Background Color:
+		<input type="color" id="CP2" onchange="divBGCP2()" />&nbsp;&nbsp;
+
+    </body>
+</html>
