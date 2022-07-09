@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Demo with Jquery</title>
+    <link rel="stylesheet" href="/css/animation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#strt').click(function(){
+                $('#sqr').css('display','block')
+            })
+            $('#a1').click(function(){
+                $('#sqr').animate({left:'+=200px'})
+            })
+            $('#a2').click(function(){
+                $('#sqr').animate({height:'+=10px',width:'+=10px'})
+            })
+            $('#a3').click(function(){
+                $('#sqr').animate({height:'600px',width:'200px',opacity:'0.5'}, 'slow')
+                $('#sqr').animate({height:'600px',width:'600px',opacity:'0.5'}, 'slow')
+                $('#sqr').animate({height:'200px',width:'600px',opacity:'0.5'}, 'slow')
+                $('#sqr').animate({height:'200px',width:'200px',opacity:'1',}, 'slow')
+            })
+
+        })
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <button id="strt">Start</button>
+        <button id="a1">Animation1</button>
+        <button id="a2">Animation2</button>
+        <button id="a3">Animation3</button>
+    </div><hr/>
+    <div id="sqr">
+
+    </div>
+</body>
+</html>

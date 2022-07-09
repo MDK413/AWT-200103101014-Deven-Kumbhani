@@ -1,0 +1,15 @@
+#fdiv{
+    background-color: plum;
+    height: 100px;
+    width: 100px;
+    /* font-size: 30px; */
+    text-align: center;
+}
+#sdiv{
+    background-color: mediumpurple;
+    height: 400px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}

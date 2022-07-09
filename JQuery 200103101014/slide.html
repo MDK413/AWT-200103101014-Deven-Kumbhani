@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery hide and show Demo</title> 
+        <link rel="stylesheet" href="/css/slide.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#fdiv').click(function(){
+                    $('#sdiv').toggle(1000);
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="fdiv">
+            Click here to show more options.
+        </div>
+        <div id="sdiv">
+            <li>Home</li><hr/>
+            <li>Contact Us</li><hr/>
+            <li>Services</li><hr/>
+            <li>About Us</li><hr/>
+        </div>
+    </body>
+</html>

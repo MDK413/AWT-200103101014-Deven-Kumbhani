@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show Demo</title>
+    <link rel="stylesheet" href="/css/hide_show.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('.container').hide(1000);
+                $('#hide').attr('disabled',true)
+                $('#show').attr('disabled',false)
+            });
+
+            $('#show').click(function(){
+                $('.container').show(1000)
+                $('#show').attr('disabled',true)
+                $('#hide').attr('disabled',false)
+            });
+
+            $('#toggle').click(function(){
+                $('.container').toggle(1000)
+                    $('#toggle').html('Show')
+                    $('#hide').attr('disabled',true)
+            });
+
+            $('#plus').click(function(){
+                $('.container').width()
+            });
+            $('#minus').click(function(){
+                $('.container').width()
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container"></div><hr/>
+    <div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </div><hr/>
+    <div>
+        <button id="toggle">Hide</button>
+    </div><hr/>
+
+    <input type="button" id="plus" value="+"></input>
+    <input type="button" id="minus" value="-"></input>
+</body>
+</html>
