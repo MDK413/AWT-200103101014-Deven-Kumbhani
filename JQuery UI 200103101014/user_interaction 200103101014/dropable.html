@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Droppable</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" />
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+      
+      <style type="text/css">
+		.ui-widget-header {
+            background:Yellow;
+            border: 3px dashed red;
+            color: orangered;
+            font-weight: bold;
+         }
+         .ui-widget-content {
+            background: red;
+            border: 4px dotted black;
+            color: yellow;
+         }
+		 .MyCls{background-color:orange;color:orangered}
+         #drgBox { 
+            width: 200px; 
+            height: 200px; 
+            padding: 10px; 
+            margin: 0px 5px 10px 0; 
+         }
+         
+         #drgHere{ 
+            width: 250px;
+            height: 250px;
+            padding: 10px; 
+            margin: 10px;  
+         }
+      </style>
+
+      <script type="text/javascript">
+         $(document).ready(function () {
+		  
+              $("#drgBox").draggable();
+
+              $("#drgHere").droppable({ 
+                  accept: "#drgBox",
+                  drop:function(event, ui) {
+                      $(this).addClass("MyCls").find("p").html("Done.....");
+					  
+                  }
+              });
+			  
+          });
+      </script>
+   </head>
+   
+   <body>
+         <div id="drgBox" class = "ui-widget-content">
+            <p>Drag Me</p>
+         </div>
+         <hr/>
+         <div id="drgHere" class = "ui-widget-header">
+            <p>Drag Here</p>
+         </div>
+      
+      
+   </body>
+</html>

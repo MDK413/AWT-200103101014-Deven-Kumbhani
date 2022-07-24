@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+	  
+      <title>Tab JQuery UI</title>
+      
+	  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css" />
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+		
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $("#MyTabDiv").tabs();
+
+          });
+      </script>
+		
+      <style type="text/css">
+         #MyTabDiv{font-size: 15px;}
+         #MyTabDiv div,#MyTabDiv p{background: plum;}
+         .ui-widget-header {
+            background: purple;
+            border: 1px solid peru;
+            color: red;
+            font-weight: bold;
+         }
+      </style>
+   </head>
+	
+   <body>
+      <div id="MyTabDiv">
+         <ul>
+            <li><a href="#tab1">Tab 1</a></li>
+            <li><a href="#tab2">Tab 2</a></li>
+            <li><a href="#tab3">Tab 3</a></li>
+         </ul>
+         <div id="tab1">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, vel natus aut voluptate illo id ad. Doloribus aut, voluptatum excepturi consequatur sit veniam neque, magnam eaque obcaecati ipsum quam accusamus odio, praesentium harum. Illum ut veritatis hic. Illum, omnis vitae.s
+            </p>
+         </div>
+         <div id="tab2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus recusandae vero omnis. Iure, soluta iste? Sed quos illo maiores unde quae, tempore dicta rerum, explicabo delectus obcaecati id odit esse.
+            </p>   
+         </div>
+         <div id="tab3">
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur quis maxime hic laborum sint quas earum cupiditate impedit recusandae voluptatibus ab perspiciatis ad autem officia, quibusdam inventore vel rerum.
+            </p>
+         </div>
+      </div><hr/>
+   </body>
+</html>
