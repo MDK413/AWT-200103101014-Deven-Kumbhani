@@ -1,0 +1,182 @@
+body{
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#intro{
+    height: 100%;
+    width: 100%;
+    font-size: xx-large;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    top: 0;
+}
+#intr_p{
+    padding-top: 260px;
+}
+#knw_btn{
+    border-radius: 30px;
+    background-color: aquamarine;
+    width: 150px;
+    height: 60px;
+    font-size: large;
+}
+#knw_btn:hover{
+    box-shadow: 10px 10px 15px black;
+}
+
+#btn_intr{
+    text-decoration: none;
+    color:black
+}
+#prof{
+    height: 300px;
+    width: 300px;
+    border-radius: 36px;
+    float: left;
+    margin-left:70px;
+    margin-top:180px;
+}
+#prof:hover{
+    box-shadow: 10px 10px 30px aquamarine;
+
+}
+#abt_me{
+    margin-left:30%;
+    padding-top: 200;
+
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#about{
+    color:black;
+    height: 100%;
+    width:100%;
+}
+#skl_btn{
+    /* border-radius: 30px; */
+    background-color: aquamarine;
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    border-radius: 30px;
+}
+#skl_btn:hover{
+    box-shadow: 10px 10px 15px black;
+}
+#btn_skl{
+    text-decoration: none;
+    color: black;
+}
+
+#intro::before{
+    content:'';
+    background: url(/img/introbg.jpg) center/cover;
+    z-index: -1;
+    top: 0;
+    left:0;
+    position: absolute;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+#about::before{
+    content: '';
+    background: url(/img/aboutbg\ \(2\).jpg) center/cover;
+    z-index: -1;
+    opacity: 0.8;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#skill::before{
+    content: "";
+    background: url(/img/robot.jpg) center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.6;
+}
+#skill_cont{
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+    padding-top: 10%;
+}
+#proj_btn{
+    border-radius: 30px;
+    background-color: aquamarine;
+    width: 150px;
+    height: 60px;
+    font-size: large;
+    margin-left: 650px;
+}
+#proj_btn:hover{
+    box-shadow: 10px 10px 15px black;
+
+}
+#btn_proj{
+    text-decoration: none;
+    color: black;
+}
+#project{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    color:black;
+    font-weight: bold;
+}
+#project::before{
+    content: "";
+    background: url(/img/project.jpg) center/cover;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}
+#pro_head{
+    text-align: center;
+    font-size: 35px;
+    color:black
+}
+#card{
+    margin-top:50px;
+    margin-left :30px;
+    display: inline-flex;
+}
+.card{
+    border: 2px solid black;
+    margin-top:20px;
+    margin:20px;
+    /* background-color: rgba(20, 15, 15, 0.507); */
+    background-color: rgba(255, 255, 255, 0.559);
+    height: 400px;
+} 
+.card:hover{
+    box-shadow: 10px 10px 15px aquamarine;
+}
+.card-text{
+    color: black;
+}
+#hm_btn{
+    border-radius: 80px;
+    background-color: aquamarine;
+    width: 80px;
+    height: 80px;
+    font-size: large;
+    margin-left: 350px;
+    margin-top:50%;
+}
+#hm_btn:hover{
+    box-shadow: 10px 10px 15px black;
+
+}
+#btn_hm{
+    text-decoration: none;
+    color: black;
+}
